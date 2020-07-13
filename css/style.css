@@ -17,7 +17,7 @@ ul{
 }
 .button_1{
   height: 38px;
-  background: #ffcc04;
+  background: #ffc425;
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -25,18 +25,18 @@ ul{
 }
 .dark{
   padding: 15px;
-  background: #555;
+  background: #777777;
   color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* Header */
 header{
-  background: #555;
+  background: #353535;
   color: #fff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #ffcc04 3px solid;
+  border-bottom: #ffc425 3px solid;
 }
 header a{
   color: #fff;
@@ -61,11 +61,11 @@ header nav{
   margin-top: 10px;
 }
 header .current a{
-  color: #ffcc04;
+  color: #ffc425;
   font-weight: bold;
 }
 header a:hover{
-  color: #ffcc04;
+  color: #ffc425;
   font-weight: bold;
 }
 /* Showcase */
@@ -87,7 +87,7 @@ header a:hover{
 #newsletter{
   padding: 20px;
   color: #fff;
-  background: #555;
+  background: #777777;
 }
 #newsletter h1{
   float: left;
@@ -134,7 +134,7 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
  ul#services li{
    list-style: none; /* takes away the bullet */
    padding: 20px;
-   border: #ccc solid 1px;
+   border: #777777 solid 1px;
    margin-bottom: 5px;
    background:#e6e6e6;
  }
@@ -143,7 +143,7 @@ footer{
   padding: 20px;
   margin-top: 20px;
   color: #fff;
-  background-color: #ffcc04;
+  background-color: #ffc425;
   text-align: center;
 }
 
