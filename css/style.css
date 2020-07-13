@@ -2,6 +2,7 @@ body{
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+  color: #272b2b;
   background-color: #f4f4f4;
 }
 /* Global */
@@ -16,7 +17,7 @@ ul{
 }
 .button_1{
   height: 38px;
-  background: #cc0;
+  background: #ffcc04;
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -24,18 +25,18 @@ ul{
 }
 .dark{
   padding: 15px;
-  background: #35424a;
+  background: #555;
   color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* Header */
 header{
-  background: #35424a;
+  background: #555;
   color: #fff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #cc0 3px solid;
+  border-bottom: #ffcc04 3px solid;
 }
 header a{
   color: #fff;
@@ -59,15 +60,14 @@ header nav{
   float: right;
   margin-top: 10px;
 }
-header .highlight, header .current a{
-  color: #9d6a84;
+header .current a{
+  color: #ffcc04;
   font-weight: bold;
 }
 header a:hover{
-  color: #cccccc;
+  color: #ffcc04;
   font-weight: bold;
 }
-
 /* Showcase */
 #showcase{
   min-height: 400px;   /*responsiveness*/
@@ -85,9 +85,9 @@ header a:hover{
 }
 /* Newsletter */
 #newsletter{
-  padding: 15px;
+  padding: 20px;
   color: #fff;
-  background: #35424a;
+  background: #555;
 }
 #newsletter h1{
   float: left;
@@ -143,7 +143,7 @@ footer{
   padding: 20px;
   margin-top: 20px;
   color: #fff;
-  background-color: #cc0;
+  background-color: #ffcc04;
   text-align: center;
 }
 
