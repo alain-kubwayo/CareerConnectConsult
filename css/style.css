@@ -1,172 +1,718 @@
-body{
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+body {
+  font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
-  color: #272b2b;
-  background-color: #f4f4f4;
+  color: #000;
+  box-sizing: border-box;
 }
+
 /* Global */
-.container{
-  width: 80%; /*responsiveness: don't use pixels */
+.container {
+  width: 80%;
   margin: auto;
-  overflow: hidden; /*If something goes out of div: you don't need a scrollbar*/
+  overflow: hidden;
 }
-ul{
+
+ul {
   margin: 0;
   padding: 0;
 }
-.button_1{
+
+.button_1 {
   height: 38px;
   background: #ffc425;
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 6px;
 }
-.dark{
+
+.button_1:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.dark {
   padding: 15px;
-  background: #777777;
-  color: #fff;
+  background: #eee;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* Header */
-header{
+header {
   background: #353535;
   color: #fff;
   padding-top: 30px;
   min-height: 70px;
   border-bottom: #ffc425 3px solid;
-}
-header a{
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
   font-size: 16px;
 }
 
-header li{ /*Horizontal Menu*/
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+header li {
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
-header #branding{
+
+header #branding {
   float: left;
 }
-header #branding h1{
+
+header #branding h1 {
   margin: 0;
 }
-header nav{
+
+header nav {
   float: right;
   margin-top: 10px;
 }
-header .current a{
+
+header .current a {
   color: #ffc425;
   font-weight: bold;
 }
-header a:hover{
+
+header a:hover {
   color: #ffc425;
   font-weight: bold;
 }
+
 /* Showcase */
-#showcase{
-  min-height: 400px;   /*responsiveness*/
-  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+#showcase {
+  min-height: 400px;
+  background-color: #fff;
   text-align: center;
-  color: #fff;
+  color: #000;
+  padding-bottom: 20px;
 }
-#showcase h1{
-  margin-top: 100px;
-  font-size: 55px;
+
+#showcase h1 {
+  margin-top: 80px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
-#showcase p{
+
+#showcase h2 {
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#showcase p {
+  font-size: 20px;
+  line-height: 2.0;
+}
+
+.employer {
+  display: inline-block;
+  padding: 20px;
+}
+
+.employee {
+  display: inline-block;
+  padding: 20px;
+}
+
+#showcase a, #main a {
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background: #ffc425;
+}
+
+#showcase a:hover, #main a:hover {
+  background: #eee;
+  color: #000;
+  transition: 0.8s;
+}
+
+#newsletter {
+  background: #eee;
+  padding: 40px 0;
+  display: grid;
+}
+
+#newsletter .container {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#newsletter h1 {
+  font-weight: 400;
   font-size: 20px;
 }
-/* Newsletter */
-#newsletter{
-  padding: 20px;
-  color: #fff;
-  background: #777777;
-}
-#newsletter h1{
-  float: left;
-}
-#newsletter form{
-  float: right;
+
+#newsletter form {
   margin-top: 15px;
 }
-#newsletter input[type="email"]{
+
+#newsletter input[type="email"] {
   padding: 4px;
   height: 25px;
   width: 250px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 5px;
 }
 
-/* Boxes */
-#boxes{
-  margin-top: 20px;
-}
-#boxes .box{
-  float: left;
-  text-align: center;
-  width: 30%;
-  padding: 10px;
-}
-#boxes .box img{
-  width: 90px;
-}
-/* sidebar */
-aside#sidebar{
+aside#sidebar {
   float: right;
   width: 30%;
-  margin-top: 10px;
+  text-align: left;
 }
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+
+#sidebar p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
   width: 90%;
   padding: 5px;
 }
- /* main-col */
- article#main-col{
-   float: left;
-   width: 65%;
- }
- /* Services */
- ul#services li{
-   list-style: none; /* takes away the bullet */
-   padding: 20px;
-   border: #777777 solid 1px;
-   margin-bottom: 5px;
-   background:#e6e6e6;
- }
-/* Footer */
-footer{
-  padding: 20px;
-  margin-top: 20px;
-  color: #fff;
-  background-color: #ffc425;
+
+#main-col {
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+
+#main-col span {
+  line-height: 1.0;
+}
+
+#main-col h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#sidebar h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#main-col .checkmark, #collaboration .checkmark {
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+
+#collaboration span, #collaboration p {
+  line-height: 1.5;
+}
+
+#main-col .fas, #collaboration .fas {
+  color: #ffc425;
+}
+
+/* Blog */
+.later {
+  min-height: 200px;
+}
+
+/*---Logo Slider--*/
+.logo-slider {
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
   text-align: center;
 }
 
-/* Media Queries */
-@media(max-width: 760px){
-  /* Simply removing floats */
-  header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col,aside#sidebar{
+#partners {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+#partners h1 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+#partners h1:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #ffc425;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#partners {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#partners h1 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+#partners h1:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #ffc425;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.item:hover {
+  display: block;
+  transition: all ease 0.3s;
+  transform: scale(1.1) translateY(-5px);
+}
+
+/*---End of Logo Slider--*/
+#partners-title {
+  background-color: #fff;
+  padding: 20px 0 0 0;
+}
+
+#partners-title h1 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#partners-title h1:after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background-color: #ffc425;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#partners {
+  padding-top: 0;
+}
+
+#partners img {
+  width: 100%;
+  text-align: center;
+}
+
+#partners .container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#partners div {
+  padding: 0;
+  margin: 20px auto;
+}
+
+/* BLOG */
+#main {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#bottom {
+  padding: 40px 0;
+  font-size: 25px;
+  font-weight: 400;
+  width: 100%;
+  background-color: #353535;
+  margin-left: 0;
+  color: #fff;
+}
+
+#bottom .far {
+  font-size: 20px;
+}
+
+#address {
+  width: 100%;
+  background-color: #eee;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px
+}
+
+.box h2 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #eee;
+}
+
+.box .content:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #ffc425;
+  top: -10px;
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+.center .content .social {
+  margin: 70px 0 0 0;
+}
+
+.center .content .social a {
+  padding: 0 2px;
+  color: #fff;
+}
+
+.center .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #777;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.center .content .social a span:hover {
+  background: #ffc425;
+}
+
+.center .content .fas {
+  font-size: 1.4375rem;
+  background: #eee;
+  height: 40px;
+  width: 40px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content .fas:hover {
+  background: #ffc425;
+}
+
+.center .content .text {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.center .content .phone {
+  margin: 10px 0;
+}
+
+.right form .text {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.right form .msg {
+  margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  font-size: 1.0625rem;
+  background: #fff;
+  /* #151515*/
+  border: 1px solid #222222;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.right form input:focus, .right form textarea:focus {
+  outline-color: #3498db;
+}
+
+.right form input {
+  height: 35px;
+}
+
+.right form .btn {
+  margin-top: 10px;
+}
+
+.right form .btn button {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #777;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .3s;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.right form .btn button:hover {
+  background: #ffc425;
+}
+
+/* Tasks Section */
+#tasks {
+  text-align: center;
+  background-color: #fff;
+  padding: 100px 20px;
+}
+
+#tasks .container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#tasks i {
+  color: #777777;
+  margin-bottom: 5px;
+}
+
+#tasks p {
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 2.0;
+}
+
+/* Certifications */
+#main .certifications img {
+  padding: 20px;
+  width: 200px;
+  height: 75px;
+}
+
+/* How can we work together */
+#collaboration {
+  text-align: left;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+#collaboration .container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#collaboration h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#together {
+  background-color: #eee;
+  padding: 20px 0;
+}
+
+#together h1 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Counter Area */
+#counters {
+  text-align: center;
+  background-color: #eee;
+  padding: 40px 20px;
+}
+
+#counters .container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#counters h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#counters .counter {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+@media(max-width: 700px) {
+  #newsletter h1 {
+    margin-bottom: 0;
+  }
+
+  #newsletter form {
+    margin-top: 0;
+  }
+
+  #counters .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #collaboration .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #newsletter .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #tasks .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #tasks .container>div:nth-of-type(1), #tasks .container>div:nth-of-type(2) {
+    border-bottom: 1px solid #ffc425;
+  }
+
+  #counters .container>div:nth-of-type(1), #counters .container>div:nth-of-type(2) {
+    border-bottom: 1px solid #ffc425;
+    padding-bottom: 20px;
+  }
+
+  #main-col, aside#sidebar {
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  header #branding, header nav, header nav li, #newsletter h1, #newsletter form {
     float: none;
     text-align: center;
     width: 100%;
   }
-  header{
+
+  header {
     padding-bottom: 20px;
   }
-  #showcase h1{
+
+  #showcase h1 {
     margin-top: 40px;
   }
-  #newsletter button, .quote button{
+
+  #newsletter button, .quote button {
     display: block;
     width: 100%;
   }
-  #newsletter form input[type="email"], .quote input, .quote textarea{ /* it didn't really do anything */
+
+  #newsletter form input[type="email"], .quote input, .quote textarea {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box {
+    margin: 5px 0;
+  }
+
+  #partners .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media(min-width: 700px) and (max-width: 990px) {
+  #main-col, aside#sidebar {
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  #collaboration .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box {
+    margin: 5px 0;
+  }
+
+  header #branding, header nav, header nav li, #newsletter h1, #newsletter form {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #tasks .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #partners .container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
